@@ -15,7 +15,9 @@ public class Sieve {
 		}
 		for( int j=2; j<n;j++) {
 			for(int k=j; k*j<n; k++) {
+				if(k*j>=0) {
 				sieve[k*j]=0;
+			}
 			}
 			
 		}
